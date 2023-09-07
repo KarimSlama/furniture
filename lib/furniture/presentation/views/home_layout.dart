@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:furniture/core/services/services_locator.dart';
 import 'package:furniture/core/utils/fonts/icon_broken.dart';
-import 'package:furniture/core/utils/theme/app_colors/app_colors.dart';
 import 'package:furniture/core/utils/theme/app_string/app_string.dart';
 import 'package:furniture/furniture/presentation/controllers/home_cubit.dart';
 import 'package:furniture/furniture/presentation/controllers/home_state.dart';

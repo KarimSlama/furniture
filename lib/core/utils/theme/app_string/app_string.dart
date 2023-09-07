@@ -18,4 +18,5 @@ class AppString {
   static const search = 'Search';
   static const cart = 'Cart';
   static const profile = 'Profile';
+  static const popular = 'Popular';
 }
