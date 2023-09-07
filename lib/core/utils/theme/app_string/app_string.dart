@@ -14,4 +14,8 @@ class AppString {
   static const alreadyHaveAnAccount = 'Already have an account?';
   static const newUser = 'New User?';
   static const forgetPassword = 'Forget Password?';
+  static const home = 'Home';
+  static const search = 'Search';
+  static const cart = 'Cart';
+  static const profile = 'Profile';
 }

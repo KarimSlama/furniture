@@ -18,7 +18,7 @@ ThemeData themeLight = ThemeData(
     ),
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.white,
-      elevation: 0.0,
+      elevation: 0,
       titleTextStyle: GoogleFonts.rubik(
         color: Colors.black,
         fontSize: 18,
@@ -43,4 +43,11 @@ ThemeData themeLight = ThemeData(
     tabBarTheme: const TabBarTheme(
       unselectedLabelColor: AppColors.grey,
       labelColor: Colors.black,
+    ),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      type: BottomNavigationBarType.fixed,
+      elevation: 0,
+      selectedItemColor: AppColors.yellow,
+      backgroundColor: AppColors.white,
+      unselectedItemColor: AppColors.lightBlack,
     ));

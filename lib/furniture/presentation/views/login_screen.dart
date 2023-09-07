@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:furniture/core/utils/fonts/icon_broken.dart';
 import 'package:furniture/core/utils/theme/app_colors/app_colors.dart';
 import 'package:furniture/core/utils/theme/app_string/app_string.dart';
+import 'package:furniture/furniture/presentation/views/home_layout.dart';
 import 'package:furniture/furniture/presentation/views/sign_up_screen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -18,13 +19,22 @@ class LoginScreen extends StatelessWidget {
           Image.asset(
             'assets/images/sofa.png',
             fit: BoxFit.cover,
-            height: MediaQuery.of(context).size.height * .4,
+            height: MediaQuery
+                .of(context)
+                .size
+                .height * .4,
           ),
           Align(
             alignment: AlignmentDirectional.bottomCenter,
             child: Container(
-              height: MediaQuery.of(context).size.height * .7,
-              width: MediaQuery.of(context).size.width,
+              height: MediaQuery
+                  .of(context)
+                  .size
+                  .height * .7,
+              width: MediaQuery
+                  .of(context)
+                  .size
+                  .width,
               decoration: const BoxDecoration(
                   borderRadius: BorderRadiusDirectional.only(
                     topEnd: Radius.circular(60),
@@ -33,15 +43,19 @@ class LoginScreen extends StatelessWidget {
                   color: AppColors.white),
               child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(vertical: 20, horizontal: 12),
+                const EdgeInsets.symmetric(vertical: 20, horizontal: 12),
                 child: Column(
                   children: [
                     Text(AppString.signIn,
-                        style: Theme.of(context)
+                        style: Theme
+                            .of(context)
                             .textTheme
                             .bodyMedium
                             ?.copyWith(fontSize: 25)),
-                    SizedBox(height: MediaQuery.of(context).size.height * .04),
+                    SizedBox(height: MediaQuery
+                        .of(context)
+                        .size
+                        .height * .04),
                     Material(
                       elevation: 5,
                       shadowColor: AppColors.white.withOpacity(.5),
@@ -59,7 +73,10 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: MediaQuery.of(context).size.height * .03),
+                    SizedBox(height: MediaQuery
+                        .of(context)
+                        .size
+                        .height * .03),
                     Material(
                       elevation: 5,
                       shadowColor: AppColors.white.withOpacity(.5),
@@ -85,18 +102,28 @@ class LoginScreen extends StatelessWidget {
                         child: Text(
                           AppString.forgetPassword,
                           style:
-                              Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                    fontSize: 15,
-                                    color: AppColors.grey,
-                                    decoration: TextDecoration.underline,
-                                  ),
+                          Theme
+                              .of(context)
+                              .textTheme
+                              .bodyMedium
+                              ?.copyWith(
+                            fontSize: 15,
+                            color: AppColors.grey,
+                            decoration: TextDecoration.underline,
+                          ),
                         ),
                       ),
                     ),
-                    SizedBox(height: MediaQuery.of(context).size.height * .03),
+                    SizedBox(height: MediaQuery
+                        .of(context)
+                        .size
+                        .height * .03),
                     Container(
                       width: double.infinity,
-                      height: MediaQuery.of(context).size.height * .07,
+                      height: MediaQuery
+                          .of(context)
+                          .size
+                          .height * .07,
                       decoration: const BoxDecoration(
                         color: AppColors.yellow,
                         borderRadius: BorderRadiusDirectional.all(
@@ -104,26 +131,44 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          ///TODO: Just for test 
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) => HomeLayout(),));
+                        },
                         child: Text(
                           AppString.signIn,
                           style:
-                              Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                    color: AppColors.white,
-                                    fontSize: 16,
-                                  ),
+                          Theme
+                              .of(context)
+                              .textTheme
+                              .bodyMedium
+                              ?.copyWith(
+                            color: AppColors.white,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
                     ),
-                    SizedBox(height: MediaQuery.of(context).size.height * .04),
+                    SizedBox(height: MediaQuery
+                        .of(context)
+                        .size
+                        .height * .04),
                     Text(
                       AppString.orContinueWith,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            fontSize: 16,
-                            color: AppColors.grey,
-                          ),
+                      style: Theme
+                          .of(context)
+                          .textTheme
+                          .bodyMedium
+                          ?.copyWith(
+                        fontSize: 16,
+                        color: AppColors.grey,
+                      ),
                     ),
-                    SizedBox(height: MediaQuery.of(context).size.height * .04),
+                    SizedBox(height: MediaQuery
+                        .of(context)
+                        .size
+                        .height * .04),
                     Row(
                       children: [
                         Expanded(
@@ -161,17 +206,24 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: MediaQuery.of(context).size.height * .03),
+                    SizedBox(height: MediaQuery
+                        .of(context)
+                        .size
+                        .height * .03),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           AppString.newUser,
                           style:
-                              Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                    fontSize: 16,
-                                    decoration: TextDecoration.underline,
-                                  ),
+                          Theme
+                              .of(context)
+                              .textTheme
+                              .bodyMedium
+                              ?.copyWith(
+                            fontSize: 16,
+                            decoration: TextDecoration.underline,
+                          ),
                         ),
                         TextButton(
                           onPressed: () {
@@ -184,11 +236,12 @@ class LoginScreen extends StatelessWidget {
                           },
                           child: Text(
                             AppString.signUp,
-                            style: Theme.of(context)
+                            style: Theme
+                                .of(context)
                                 .textTheme
                                 .bodyMedium
                                 ?.copyWith(
-                                    fontSize: 16, color: AppColors.yellow),
+                                fontSize: 16, color: AppColors.yellow),
                           ),
                         ),
                       ],
