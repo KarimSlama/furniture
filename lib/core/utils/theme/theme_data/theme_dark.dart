@@ -11,19 +11,19 @@ ThemeData themeDark = ThemeData(
       surface: AppColors.green,
       background: Colors.black26,
       error: Colors.red,
-      onPrimary: Colors.white,
-      onSecondary: Colors.white,
-      onSurface: Colors.white,
-      onBackground: Colors.white,
-      onError: Colors.white,
+      onPrimary: AppColors.white,
+      onSecondary: AppColors.white,
+      onSurface: AppColors.white,
+      onBackground: AppColors.white,
+      onError: AppColors.white,
       brightness: Brightness.dark,
     ),
     appBarTheme: AppBarTheme(
-      backgroundColor: Colors.black26,
-      elevation: 0.0,
+      backgroundColor: AppColors.white,
+      elevation: 0,
       titleTextStyle: GoogleFonts.rubik(
-        color: AppColors.white,
-        fontSize: 14,
+        color: AppColors.black,
+        fontSize: 18,
         fontWeight: FontWeight.w500,
       ),
       actionsIconTheme: const IconThemeData(color: AppColors.white, size: 26),
@@ -40,10 +40,7 @@ ThemeData themeDark = ThemeData(
     ),
     textTheme: TextTheme(
       bodyMedium: GoogleFonts.rubik(
-        color: AppColors.white,
-        fontSize: 14,
-        fontWeight: FontWeight.w500,
-      ),
+          color: AppColors.white, fontSize: 18, fontWeight: FontWeight.w400),
     ),
     tabBarTheme: const TabBarTheme(
       unselectedLabelColor: AppColors.grey,
@@ -52,6 +49,5 @@ ThemeData themeDark = ThemeData(
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       elevation: 0,
       selectedItemColor: AppColors.yellow,
-      backgroundColor: Colors.black26,
       unselectedItemColor: AppColors.white,
     ));

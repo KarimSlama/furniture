@@ -60,7 +60,6 @@ class LoginScreen extends StatelessWidget {
                       elevation: 5,
                       shadowColor: AppColors.white.withOpacity(.5),
                       borderRadius: BorderRadiusDirectional.circular(20.0),
-                      color: Colors.white,
                       child: TextFormField(
                         controller: emailController,
                         keyboardType: TextInputType.emailAddress,
@@ -81,7 +80,6 @@ class LoginScreen extends StatelessWidget {
                       elevation: 5,
                       shadowColor: AppColors.white.withOpacity(.5),
                       borderRadius: BorderRadiusDirectional.circular(20.0),
-                      color: Colors.white,
                       child: TextFormField(
                         controller: passwordController,
                         keyboardType: TextInputType.text,

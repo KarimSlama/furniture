@@ -18,7 +18,7 @@ class CategoryListWidget extends StatelessWidget {
                 children: [
                   Material(
                     elevation: 8,
-                    shadowColor: AppColors.white.withOpacity(.9),
+                    shadowColor: AppColors.white.withOpacity(.5),
                     borderRadius: BorderRadiusDirectional.circular(10),
                     child: Padding(
                       padding: const EdgeInsets.all(10),
