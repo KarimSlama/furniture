@@ -19,4 +19,9 @@ class AppString {
   static const cart = 'Cart';
   static const profile = 'Profile';
   static const popular = 'Popular';
+  static const yourShoppingCartIsEmpty = 'Your Shopping cart is empty';
+  static const lookingForIdeas = 'Looking for ideas?';
+  static const seePopularItems = 'See popular items';
+  static const totalPrice = 'Total Price:';
+  static const proceedToCheckout = 'Proceed to Checkout';
 }
