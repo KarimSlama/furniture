@@ -24,4 +24,17 @@ class AppString {
   static const seePopularItems = 'See popular items';
   static const totalPrice = 'Total Price:';
   static const proceedToCheckout = 'Proceed to Checkout';
+  static const account = 'Account';
+  static const editProfile = 'Edit Profile';
+  static const security = 'Security';
+  static const notifications = 'Notifications';
+  static const privacy = 'Privacy';
+  static const supportAbout = 'Support & About';
+  static const mySubscription = 'My Subscription';
+  static const helpSupport = 'Help & Support';
+  static const termsAndPolicies = 'Terms and Policies';
+  static const actions = 'Actions';
+  static const reportAProblem = 'Report a problem';
+  static const addAccount = 'Add account';
+  static const logOut = 'Log out';
 }

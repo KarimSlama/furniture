@@ -19,6 +19,7 @@ class LoginScreen extends StatelessWidget {
           Image.asset(
             'assets/images/sofa.png',
             fit: BoxFit.cover,
+            width: double.infinity,
             height: MediaQuery
                 .of(context)
                 .size

@@ -19,6 +19,7 @@ class SignUpScreen extends StatelessWidget {
           Image.asset(
             'assets/images/yellow_sofa.png',
             fit: BoxFit.cover,
+            width: double.infinity,
             height: MediaQuery.of(context).size.height * .4,
           ),
           Align(
